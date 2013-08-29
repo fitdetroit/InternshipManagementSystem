@@ -1,23 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="/struts-tags" prefix="s"%>
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title></title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
-
-
-<script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <style type="text/css">
- .container { min-height: 1360px;}
+.container { min-height: 1360px;}
 .registration_form{ height: 1171px; padding:10px; width: 960px;}
 .registration_form table{border-bottom:5px solid #ffffff; width:910px; position:relative; margin-left:auto; margin-right:auto;}
 .registration_form table td{ color:#999999;}
@@ -38,7 +20,6 @@
 .div_verify_note{ color:#444444}
 </style>
 </head>
-
     <div class="notifi_reg-form">
       <h2>Welcome to Internship Management System</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
@@ -124,6 +105,5 @@
       </s:form>
       <p class="text_note" style="color:#999999;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     </div>
-
 
 
