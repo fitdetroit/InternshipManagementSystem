@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+
+	
+
+	<package name="student" namespace="/student" extends="struts-default">
+
+
+
+		<action name="LogOut" class="ims.actions.Login"
+			method="logOut">
+			<result name="success" type="redirect">../index</result>
+		</action>
+
+		<action name="NewStudent" class="ims.actions.NewStudent">
+			<result>/jsp/StudentRegistrationForm.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="RegisterStudent" class="ims.actions.StudentRegistration"
+			method="registration">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">10000000</param>
+				<param name="allowedTypes"> image/png,image/gif,image/jpeg,image/pjpeg</param>
+			</interceptor-ref>
+			<interceptor-ref name="basicStack" />
+			<result name="success">/jsp/RegistedStudent.jsp</result>
+			<result name="input">/jsp/StudentRegistrationForm.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+
+		<action name="ViewToUpdateStudent" class="ims.actions.EditStudent"
+			method="editDetails">
+			<result name="success" >/jsp/EditStudent.jsp</result>
+			<result name="input">../jsp/Login.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="UpdateStudent" class="ims.actions.UpdatingStudentByStudent"
+			method="updateStudent">
+			<result name="success" type="redirect">../index</result>
+			<result name="input">/jsp/EditStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="ViewStudent" class="ims.actions.ViewStudent"
+			method="viewStudentToStudent">
+			<result name="success">/jsp/views/StudentViewToStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="ViewStudentCV" class="ims.actions.ViewStudent"
+			method="viewStudentToStudent">
+			<result name="success">/jsp/views/StudentCvToStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+
+
+
+
+		<action name="GetImageStudent" class="ims.actions.GetProfilePicture">
+			<result name="success" type="stream">
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+
+		<action name="GetImageCompanyToStudent" class="ims.actions.GetProfilePicture">
+			<result name="success" type="stream">
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+
+		<action name="ViewCompanyProfile" class="ims.actions.ViewCompany"
+			method="allowedCompanyToStudent">
+			<result name="success">/jsp/views/AllowedCompanyToStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+
+		<action name="FullCompanyProfileToStudent" class="ims.actions.ViewCompany"
+			method="FullProfileToStudent">
+			<result name="success">/jsp/views/FullCompanyToStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="updateStudentPassword" class="ims.actions.UpdatingUnRegiStudent"
+			method="changeStudentPassword">
+			<result name="success">/jsp/UnRegistedStudent.jsp</result>
+			<result name="input">/jsp/ChangeStudentPasswordForm.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="ToChangePasswordStudent" class="ims.actions.EditStudent">
+			<result name="success">/jsp/ChangeStudentPasswordForm.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+		<action name="AllowedStudentPage" class="ims.actions.Login">
+			<result name="success">/jsp/RegistedStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+		
+		<action name="ViewStateOfCompany" class="ims.actions.ViewStudentStateOfCompany" method="viewStudentAppliedCompanyState">
+			<result name="success">/jsp/views/ViewCompanyStateToStudent.jsp</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+		
+			<action name="UpdateNewApplyCompany" class="ims.actions.UpdateNewlyAppliedCompany" method="updateNewlyAppliedCompany">
+			<result name="success" type="redirect">../index</result>
+			<result name="error" type="redirect">../index</result>
+		</action>
+
+
+	</package>
+
+</struts>
