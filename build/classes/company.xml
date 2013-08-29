@@ -11,7 +11,7 @@
 	<package name="company" namespace="/" extends="struts-default">
 
 		<action name="NewCompany">
-			<result >/index.jsp?cat=company&amp;page=CompRegistration</result>
+			<result >/index.jsp?cat=company&amp;subcat=NotAllowedComp&amp;page=CompRegistration</result>
 		</action>
 		<action name="ToRegistration">
 			<result>/jsp/CompanyRegistrationForm.jsp</result>
@@ -25,7 +25,7 @@
 		<action name="RegisterCompany" class="ims.actions.CompanyRegistration"
 			method="registration">
 			<result name="success">/jsp/NotAllowedCompany.jsp</result>
-			<result name="input">/index.jsp?cat=company&amp;page=CompRegistration</result>
+			<result name="input">/index.jsp?cat=company&amp;subcat=NotAllowedComp&amp;page=CompRegistration</result>
 		<result name="error" type="redirect">/index</result>
 		</action>
 
