@@ -13,7 +13,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title></title>
-<META HTTP-EQUIV="Refresh" CONTENT="0;URL=index">
+<% if( request.getParameter("page") == null ){	%>
+<META HTTP-EQUIV="Refresh" CONTENT="0;URL=index">			
+<% }%>
+		
+		
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 <style type="text/css">  <%@include file="assets/css/normalize.css" %>  </style>

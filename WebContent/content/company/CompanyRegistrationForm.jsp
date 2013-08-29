@@ -1,17 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
 
+
+<script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <style type="text/css">
-.registration_form{ padding:10px; width: 960px;}
+ .container { min-height: 1360px;}
+.registration_form{ height: 1171px; padding:10px; width: 960px;}
 .registration_form table{border-bottom:5px solid #ffffff; width:910px; position:relative; margin-left:auto; margin-right:auto;}
-.registration_form table td{ color:#000;}
+.registration_form table td{ color:#999999;}
 .registration_form table td.user_input_fieldset{ background:rgb(231, 238, 250); border-bottom:5px solid #ffffff; padding:0 10px 0 10px }
-.registration_form table td.table_sub_headings{background-color: #e7effc;color:#333333; font-weight:bold;}
 .registration_form table td.file_upload{ height:150px;}
 .registration_form table td label{ color: #444444}
 .registration_form table td.input_notif{background: rgb(247, 247, 248); color:#555555; font-size:0.8em; border-bottom:5px solid #ffffff;}
-.content_area{width:630px;float:left}
+.content_area{width:630px; height:1000px; float:left}
 .input_name{ color: #666666}
-.form_inputs{ width:490px; height:30px; display:block; margin-top:5px; margin-bottom:10px; font-size:1.2em; font-weight:400; padding-left:10px; color:#333333; border: 1px solid #d9e3f4;}
-.input_comp_disc{ max-width:585px; min-width:585px;  padding-left:10px; font-size:1.2em; font-weight:400; color:#333333}
+.form_inputs{ width:490px; height:30px; margin-top:5px; margin-bottom:10px; font-size:1.2em; font-weight:400; padding-left:10px; color:#333333; border: 1px solid #d9e3f4;}
+.input_comp_disc{ max-width:585px; min-width:585px; max-height:500px; padding-left:10px; font-size:1.2em; font-weight:400; color:#333333}
 .fileupload-new-but{ background:rgb(57, 136, 214); padding:5px 20px 5px 20px; font-family: sans-serif; color:#EFEFEF; font-weight:600}
 .fileupload-exists-but{  background:rgb(106, 177, 112); padding:5px 20px 5px 20px; font-family: sans-serif; color:#EFEFEF; font-weight:600; text-decoration:none}
 .thumb-image{ background: url(../assets/img/comp_default.png); border:1px solid #d9e3f4;}
@@ -19,11 +36,10 @@
 .but_submit{ background:#0066CC; color:#FFFFFF; font-weight:bold; width:150px; height:35px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:none; margin-left:450px;}
 .text_note{ font-size:.8em; color:#999999; padding-top:30px;}
 .div_verify_note{ color:#444444}
-.clear{ clear:both}
 </style>
 </head>
-<body>
-    <div class="notifi_reg-form ">
+
+    <div class="notifi_reg-form">
       <h2>Welcome to Internship Management System</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
     </div>
@@ -31,17 +47,10 @@
     <div class="registration_form">
       <s:form method="post" action="RegisterCompany" enctype="multipart/form-data" validate="true">
         <table cellpadding="5" cellspacing="0">
-          <tr><td colspan="2" class="user_input_fieldset table_sub_headings">GENARAL INFORMATION</td></tr>
-		  <tr>
-          	<td class="user_input_fieldset"><label>Name of the company</label>
+          <tr>
+            <td class="user_input_fieldset"><label>Name of the company</label>
               <input type="text" name="companyName" class="form_inputs"/></td>
-           	<td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
-          </tr>
-		  <tr>
-          	<td class="user_input_fieldset"><label>Simple Discription</label>
-			  <textarea class="form_inputs"></textarea>
-			  </td>
-           	<td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
+            <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
           </tr>
           <tr>
             <td class="user_input_fieldset file_upload"><label>Select a Profile Picture</label>
@@ -78,10 +87,14 @@
               <input type="password" name="conPassword" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
-          <tr><td colspan="2" class="user_input_fieldset table_sub_headings">CONTACT INFORMATION</td></tr>
           <tr>
             <td class="user_input_fieldset"><label>Telephone</label>
               <input type="text" name="companyTelephone" class="form_inputs"/></td>
+            <td class="input_notif"></td>
+          </tr>
+          <tr>
+            <td class="user_input_fieldset"><label>Contact Person</label>
+              <input type="text" name="contactPerson" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
@@ -94,13 +107,11 @@
               <input type="text" name="companyWeb" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
-		  
-		  <tr>
-            <td class="user_input_fieldset"><label>Contact Person</label>
-              <input type="text" name="contactPerson" class="form_inputs"/></td>
+          <tr>
+            <td class="user_input_fieldset"><label>Number of Vacansies</label>
+              <input type="text" name="noOfVacancies" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
-          
           <tr>
             <td colspan="3"><div class="div_verify_note">
                 <label>
@@ -113,5 +124,6 @@
       </s:form>
       <p class="text_note" style="color:#999999;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     </div>
+
 
 
