@@ -91,7 +91,33 @@
           </tr>
           <tr>
         </table>
-        
+
+<table cellpadding="5" cellspacing="0">
+          <tr><td colspan="2" class="sub_header">Spacification</td></tr>
+		  <tr>
+            <td>
+            <input type="checkbox" id="Web1"/><label for="Web1">Web Developing</label><br>
+            <input type="checkbox" id="Web2"/><label for="Web2">Java</label><br>
+            <input type="checkbox" id="Web3"/><label for="Web3">C# ASP .NET</label></td>
+            
+            
+            
+            <td>
+            <input type="checkbox" id="Web4"/><label for="Web4">PHP</label><br>
+            <input type="checkbox" id="Web5"/><label for="Web5">RUBY</label><br>
+            <input type="checkbox" id="Web6"/><label for="Web6">PYTHON</label> </td>
+            
+            <td>
+            <input type="checkbox" id="Web7"/><label for="Web7">TEXT</label><br>
+            <input type="checkbox" id="Web8"/><label for="Web8">Other</label><br>
+            <input type="checkbox" id="Web9"/><label for="Web9">This is a sample</label> </td>
+            
+            
+          </tr>
+
+		 </table>
+
+   
       
 <hr><h4>For office use only</h4><hr>         
          <table cellpadding="5" cellspacing="0">
