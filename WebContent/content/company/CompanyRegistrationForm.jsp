@@ -1,11 +1,11 @@
 <style type="text/css">
-.container { min-height: 1360px;}
-.registration_form{ height: 1171px; padding:10px; width: 960px;}
+.registration_form{padding:10px; width: 960px;}
 .registration_form table{border-bottom:5px solid #ffffff; width:910px; position:relative; margin-left:auto; margin-right:auto;}
 .registration_form table td{ color:#999999;}
 .registration_form table td.user_input_fieldset{ background:rgb(231, 238, 250); border-bottom:5px solid #ffffff; padding:0 10px 0 10px }
 .registration_form table td.file_upload{ height:150px;}
 .registration_form table td label{ color: #444444}
+.sub_header{ collor:#000000}
 .registration_form table td.input_notif{background: rgb(247, 247, 248); color:#555555; font-size:0.8em; border-bottom:5px solid #ffffff;}
 .content_area{width:630px; height:1000px; float:left}
 .input_name{ color: #666666}
@@ -39,12 +39,8 @@
               <div class="controls">
                 <div class="input-prepend"> <span class="add-on"><i class="icon-camera"></i></span>
                   <!-- file upload-->
-                  <div class="fileupload fileupload-new" data-provides="fileupload">
-                    <div class="fileupload-preview thumbnail thumb-image" style="width: 190px; height: 140px;"></div>
-                    <div> <span class="btn btn-file" > <span class="fileupload-new upload-but fileupload-new-but">Select image</span> <span class="fileupload-exists fileupload-new-but">Change</span>
-                      <input type="file" name="ProfilePicture"/>
-                      </span> <a href="#" class="btn fileupload-exists fileupload-exists-but" data-dismiss="fileupload">Remove</a> </div>
-                  </div>
+                  
+                      <input type="file" class="but_change" name="ProfilePicture"/>
                   <!--end of file upload -->
                 </div>
               </div></td>
@@ -94,13 +90,61 @@
             <td class="input_notif"></td>
           </tr>
           <tr>
+        </table>
+        
+      
+<hr><h4>For office use only</h4><hr>         
+         <table cellpadding="5" cellspacing="0">
+          <tr><td colspan="2" class="sub_header">Contact Person</td></tr>
+		  <tr>
+            <td class="user_input_fieldset"><label>Name of the Person</label>
+              <input type="text" name="" class="form_inputs"/></td>
+            <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
+          </tr>
+			<tr>
+            <td class="user_input_fieldset"><label>Contact Number</label>
+              <input type="text" name="" class="form_inputs"/></td>
+            <td class="input_notif"></td>
+          </tr>
+		   <tr>
+            <td class="user_input_fieldset"><label>Contact email Address</label>
+              <input type="text" name="" class="form_inputs"/></td>
+            <td class="input_notif"></td>
+          </tr>
+		 </table>
+		 
+		  <table cellpadding="5" cellspacing="0">
+          <tr><td colspan="2" class="sub_header">Aulternative Contact Person</td></tr>
+		  <tr>
+            <td class="user_input_fieldset"><label>Name of the Person</label>
+              <input type="text" name="" class="form_inputs"/></td>
+            <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
+          </tr>
+			<tr>
+            <td class="user_input_fieldset"><label>Contact Number</label>
+              <input type="text" name="" class="form_inputs"/></td>
+            <td class="input_notif"></td>
+          </tr>
+		   <tr>
+            <td class="user_input_fieldset"><label>Contact email Address</label>
+              <input type="text" name="" class="form_inputs"/></td>
+            <td class="input_notif"></td>
+          </tr>
+          
             <td colspan="3"><div class="div_verify_note">
                 <label>
                 <input type="checkbox"/>
                 &nbsp; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</label>
               </div></td>
           </tr>
-        </table>
+		 </table>	
+		 
+        
+        
+        
+        
+        
+        
         <s:submit label="Save" cssClass="but_submit"></s:submit>
       </s:form>
       <p class="text_note" style="color:#999999;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
