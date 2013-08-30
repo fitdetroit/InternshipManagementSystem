@@ -26,8 +26,6 @@
 
 
 <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/dropdown.js"></script>
 </head>
 <body class="<%= request.getParameter("cat") %> <%= request.getParameter("page") %>">
 <div class="header_top">
@@ -79,10 +77,13 @@
 	</div>
 
 
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap-fileupload.js"></script>
-<script src="assets/js/dropdown.js"></script>
+<script type="text/javascript"  src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-fileupload.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+<script type="text/javascript" src="assets/js/dropdown.js"></script>
+<script type="text/javascript" src="assets/js/Regpage_validate.js"></script>
+
 </body>
 </html>

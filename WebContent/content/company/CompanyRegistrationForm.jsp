@@ -4,7 +4,7 @@
 .registration_form table td{ color:#999999;}
 .registration_form table td.user_input_fieldset{ background:rgb(231, 238, 250); border-bottom:5px solid #ffffff; padding:0 10px 0 10px }
 .registration_form table td.file_upload{ height:150px;}
-.registration_form table td label{ color: #444444}
+.registration_form table td .user_input_label{ color: #444444}
 .sub_header{ collor:#000000}
 .registration_form table td.input_notif{background: rgb(247, 247, 248); color:#555555; font-size:0.8em; border-bottom:5px solid #ffffff;}
 .content_area{width:630px; height:1000px; float:left}
@@ -18,6 +18,7 @@
 .but_submit{ background:#0066CC; color:#FFFFFF; font-weight:bold; width:150px; height:35px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:none; margin-left:450px;}
 .text_note{ font-size:.8em; color:#999999; padding-top:30px;}
 .div_verify_note{ color:#444444}
+.help-inline-note{ color:#FF0000; font-size:0.8em; padding-top:0;}
 </style>
 </head>
     <div class="notifi_reg-form">
@@ -26,15 +27,16 @@
     </div>
     <h3>REGISTRATION FORM</h3>
     <div class="registration_form">
-      <s:form method="post" action="RegisterCompany" enctype="multipart/form-data" validate="true">
+     
+      <s:form id="signUp" method="post" action="RegisterCompany" enctype="multipart/form-data" >
         <table cellpadding="5" cellspacing="0">
           <tr>
-            <td class="user_input_fieldset"><label>Name of the company</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Name of the company</label>
               <input type="text" name="companyName" class="form_inputs"/></td>
             <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
           </tr>
           <tr>
-            <td class="user_input_fieldset file_upload"><label>Select a Profile Picture</label>
+            <td class="user_input_fieldset file_upload"><label class="user_input_label">Select a Profile Picture</label>
               <!-- start of image -->
               <div class="controls">
                 <div class="input-prepend"> <span class="add-on"><i class="icon-camera"></i></span>
@@ -50,42 +52,42 @@
           </tr>
           
           <tr>
-            <td class="user_input_fieldset"><label>Username</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Username</label>
               <input type="text" name="companyUserName" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Password</label>
-              <input type="password" name="password" class="form_inputs"/></td>
+            <td class="user_input_fieldset"><label class="user_input_label">Password</label>
+              <input type="password" id="password" name="password" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Repeat Password</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Repeat Password</label>
               <input type="password" name="conPassword" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Telephone</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Telephone</label>
               <input type="text" name="companyTelephone" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Contact Person</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Contact Person</label>
               <input type="text" name="contactPerson" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Company Address</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Company Address</label>
               <input type="text" name="companyAddress" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Website URL</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Website URL</label>
               <input type="text" name="companyWeb" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
-            <td class="user_input_fieldset"><label>Number of Vacansies</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Number of Vacansies</label>
               <input type="text" name="noOfVacancies" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
@@ -123,17 +125,17 @@
          <table cellpadding="5" cellspacing="0">
           <tr><td colspan="2" class="sub_header">Contact Person</td></tr>
 		  <tr>
-            <td class="user_input_fieldset"><label>Name of the Person</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Name of the Person</label>
               <input type="text" name="" class="form_inputs"/></td>
             <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
           </tr>
 			<tr>
-            <td class="user_input_fieldset"><label>Contact Number</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Contact Number</label>
               <input type="text" name="" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
 		   <tr>
-            <td class="user_input_fieldset"><label>Contact email Address</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Contact email Address</label>
               <input type="text" name="" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
@@ -142,17 +144,17 @@
 		  <table cellpadding="5" cellspacing="0">
           <tr><td colspan="2" class="sub_header">Aulternative Contact Person</td></tr>
 		  <tr>
-            <td class="user_input_fieldset"><label>Name of the Person</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Name of the Person</label>
               <input type="text" name="" class="form_inputs"/></td>
             <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
           </tr>
 			<tr>
-            <td class="user_input_fieldset"><label>Contact Number</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Contact Number</label>
               <input type="text" name="" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
 		   <tr>
-            <td class="user_input_fieldset"><label>Contact email Address</label>
+            <td class="user_input_fieldset"><label class="user_input_label">Contact email Address</label>
               <input type="text" name="" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
@@ -171,7 +173,7 @@
         
         
         
-        <s:submit label="Save" cssClass="but_submit"></s:submit>
+        <s:submit label="Save" id="signUp" cssClass="but_submit"></s:submit>
       </s:form>
       <p class="text_note" style="color:#999999;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     </div>
