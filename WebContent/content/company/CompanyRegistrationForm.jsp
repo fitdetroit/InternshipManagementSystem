@@ -18,7 +18,7 @@
 .but_submit{ background:#0066CC; color:#FFFFFF; font-weight:bold; width:150px; height:35px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:none; margin-left:450px;}
 .text_note{ font-size:.8em; color:#999999; padding-top:30px;}
 .div_verify_note{ color:#444444}
-.help-inline-note{ color:#FF0000; font-size:0.8em; padding-top:0;}
+.help-inline-note{ color:#FF0000; font-size:0.8em; padding-top:0; float:right}
 </style>
 </head>
     <div class="notifi_reg-form">
