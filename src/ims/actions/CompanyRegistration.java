@@ -29,9 +29,13 @@ public class CompanyRegistration extends ActionSupport{
 	private String companyAddress;
 	private String companyWeb;
 	private String noOfVacancies;
+	private String specification;
+	private String contactperson1;
+	private String alternateCPerson;
 	private String password;
 	private String conPassword;
 	private boolean allowed;
+	
 	
 	Company company = new Company();
 	User user = new User();
@@ -69,6 +73,9 @@ public class CompanyRegistration extends ActionSupport{
 		company.setCompanyAddress(getCompanyAddress());
 		company.setCompanyWeb(getCompanyWeb());
 		company.setNoOfVacancies(getNoOfVacancies());
+		company.setSpecification(getSpecification());
+		company.setContactperson1(getContactperson1());
+		company.setAlternateCPerson(getAlternateCPerson());
 		company.setAllowed(false);
 	
 		
@@ -117,6 +124,10 @@ public class CompanyRegistration extends ActionSupport{
 	
 	
 	
+
+	
+
+
 
 	// this validate method is used to validate passwod and confrom passwod and check username allready in database
 	public void validate()
@@ -230,8 +241,47 @@ public class CompanyRegistration extends ActionSupport{
 		return password;
 	}
 
+	public String getSpecification() {
+		return specification;
+	}
 
 
+
+
+	public void setSpecification(String specification) {
+		this.specification = specification;
+	}
+
+
+
+
+	public String getContactperson1() {
+		return contactperson1;
+	}
+
+
+
+
+	public void setContactperson1(String contactperson1) {
+		this.contactperson1 = contactperson1;
+	}
+
+
+
+
+	public String getAlternateCPerson() {
+		return alternateCPerson;
+	}
+
+
+
+
+	public void setAlternateCPerson(String alternateCPerson) {
+		this.alternateCPerson = alternateCPerson;
+	}
+
+
+	
 	public boolean isAllowed() {
 		return allowed;
 	}

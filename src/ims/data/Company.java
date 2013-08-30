@@ -24,6 +24,28 @@ public class Company {
 	private String companyAddress;
 	private String companyWeb;
 	private String noOfVacancies;
+	private String specification;
+	private String contactperson1;
+	private String alternateCPerson;
+	
+	public String getSpecification() {
+		return specification;
+	}
+	public void setSpecification(String specification) {
+		this.specification = specification;
+	}
+	public String getContactperson1() {
+		return contactperson1;
+	}
+	public void setContactperson1(String contactperson1) {
+		this.contactperson1 = contactperson1;
+	}
+	public String getAlternateCPerson() {
+		return alternateCPerson;
+	}
+	public void setAlternateCPerson(String alternateCPerson) {
+		this.alternateCPerson = alternateCPerson;
+	}
 	private boolean allowed;
 	private boolean state;
 	private boolean receiveCv;

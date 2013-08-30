@@ -142,7 +142,7 @@
 		 </table>
 		 
 		  <table cellpadding="5" cellspacing="0">
-          <tr><td colspan="2" class="sub_header">Aulternative Contact Person</td></tr>
+          <tr><td colspan="2" class="sub_header">Alternative Contact Person</td></tr>
 		  <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Name of the Person</label>
               <input type="text" name="" class="form_inputs"/></td>
