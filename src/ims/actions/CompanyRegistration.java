@@ -32,6 +32,7 @@ public class CompanyRegistration extends ActionSupport{
 	private String specification;
 	private String contactperson1;
 	private String alternateCPerson;
+	
 	private String password;
 	private String conPassword;
 	private boolean allowed;
@@ -279,7 +280,7 @@ public class CompanyRegistration extends ActionSupport{
 	public void setAlternateCPerson(String alternateCPerson) {
 		this.alternateCPerson = alternateCPerson;
 	}
-
+	
 
 	
 	public boolean isAllowed() {

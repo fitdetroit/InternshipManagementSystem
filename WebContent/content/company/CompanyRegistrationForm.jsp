@@ -71,11 +71,11 @@
               <input type="text" name="companyTelephone" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
-          <tr>
+          <!--  <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Contact Person</label>
               <input type="text" name="contactPerson" class="form_inputs"/></td>
             <td class="input_notif"></td>
-          </tr>
+          */</tr>-->
           <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Company Address</label>
               <input type="text" name="companyAddress" class="form_inputs"/></td>
@@ -86,33 +86,34 @@
               <input type="text" name="companyWeb" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
-          <tr>
-            <td class="user_input_fieldset"><label class="user_input_label">Number of Vacansies</label>
+         <!--   <tr>
+            <td class="user_input_fieldset"><label class="user_input_label">Number of Vacancies</label>
               <input type="text" name="noOfVacancies" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           <tr>
+          -->
         </table>
 
 <table cellpadding="5" cellspacing="0">
-          <tr><td colspan="2" class="sub_header">Spacification</td></tr>
+          <tr><td colspan="2" class="sub_header">Specification</td></tr>
 		  <tr>
             <td>
-            <input type="checkbox" id="Web1"/><label for="Web1">Web Developing</label><br>
-            <input type="checkbox" id="Web2"/><label for="Web2">Java</label><br>
-            <input type="checkbox" id="Web3"/><label for="Web3">C# ASP .NET</label></td>
+            <input type="checkbox" id="Web1" name="specification" value = "Web Developing"/><label for="Web1">Web Developing</label><br>
+            <input type="checkbox" id="Web2" name="specification" value = "Java"/><label for="Web2">Java</label><br>
+            <input type="checkbox" id="Web3" name="specification" value = "C# ASP .NET"/><label for="Web3">C# ASP .NET</label></td>
             
             
             
             <td>
-            <input type="checkbox" id="Web4"/><label for="Web4">PHP</label><br>
-            <input type="checkbox" id="Web5"/><label for="Web5">RUBY</label><br>
-            <input type="checkbox" id="Web6"/><label for="Web6">PYTHON</label> </td>
+            <input type="checkbox" id="Web4" name="specification" value = "PHP"/><label for="Web4">PHP</label><br>
+            <input type="checkbox" id="Web5" name="specification" value = "RUBY"/><label for="Web5">RUBY</label><br>
+            <input type="checkbox" id="Web6" name="specification" value = "PYTHON"/><label for="Web6">PYTHON</label> </td>
             
             <td>
-            <input type="checkbox" id="Web7"/><label for="Web7">TEXT</label><br>
-            <input type="checkbox" id="Web8"/><label for="Web8">Other</label><br>
-            <input type="checkbox" id="Web9"/><label for="Web9">This is a sample</label> </td>
+            <input type="checkbox" id="Web7" name="specification" value = "Android"/><label for="Web7">Android</label><br>
+            <input type="checkbox" id="Web8" name="specification" value = "Wordpress"/><label for="Web8">Wordpress</label><br>
+            <input type="checkbox" id="Web9" name="specification" value = "Other"/><label for="Web9">Other</label> </td>
             
             
           </tr>
@@ -121,22 +122,22 @@
 
    
       
-<hr><h4>For office use only</h4><hr>         
+<hr><h4>Contact Information</h4><hr>         
          <table cellpadding="5" cellspacing="0">
           <tr><td colspan="2" class="sub_header">Contact Person</td></tr>
 		  <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Name of the Person</label>
-              <input type="text" name="" class="form_inputs"/></td>
+              <input type="text" name="contactperson1" class="form_inputs"/></td>
             <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
           </tr>
 			<tr>
             <td class="user_input_fieldset"><label class="user_input_label">Contact Number</label>
-              <input type="text" name="" class="form_inputs"/></td>
+              <input type="text" name="contactperson1" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
 		   <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Contact email Address</label>
-              <input type="text" name="" class="form_inputs"/></td>
+              <input type="text" name="contactperson1" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
 		 </table>
@@ -145,17 +146,17 @@
           <tr><td colspan="2" class="sub_header">Alternative Contact Person</td></tr>
 		  <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Name of the Person</label>
-              <input type="text" name="" class="form_inputs"/></td>
+              <input type="text" name="alternateCPerson" class="form_inputs"/></td>
             <td class="input_notif">We'll send you an email to activate your account, so please triple-check that you've typed it correctly.</td>
           </tr>
 			<tr>
             <td class="user_input_fieldset"><label class="user_input_label">Contact Number</label>
-              <input type="text" name="" class="form_inputs"/></td>
+              <input type="text" name="alternateCPerson" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
 		   <tr>
             <td class="user_input_fieldset"><label class="user_input_label">Contact email Address</label>
-              <input type="text" name="" class="form_inputs"/></td>
+              <input type="text" name="alternateCPerson" class="form_inputs"/></td>
             <td class="input_notif"></td>
           </tr>
           

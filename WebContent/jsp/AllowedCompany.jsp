@@ -82,7 +82,7 @@
 
 
 <div style="float:left;width:85%; height: 668px;background:silver">
-<h2 align="center">Company Pivilages</h2>
+<h2 align="center">Company Privilages</h2>
 <br>
 <p align="center"><a href="<s:url action="company/ViewCompany"/>">click here to view company</a></p>
 <br>
