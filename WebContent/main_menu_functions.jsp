@@ -17,7 +17,7 @@
 			else if("AllowedComp".equals(request.getParameter("subcat")))
 			{
 		%>
-		<%@include file="header/menus/main_menu-common.jsp" %>
+		<%@include file="header/menus/main_menu_allowed_comp.jsp" %>
 		
 		<%
 			}// AllowedComp

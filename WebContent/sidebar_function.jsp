@@ -9,6 +9,13 @@
 
 			}// CompRegistration
 			
+			else if( "AllowedComp".equals(request.getParameter("subcat")) && "manage".equals(request.getParameter("menuid")) ){
+				%>
+				<%@include file="header/menus/widget_side_menu_manage.jsp" %>	
+				<%
+				
+			}// NotAllowed
+			
 			else if("AllowedComp".equals(request.getParameter("subcat"))){
 				%>
 				<%@include file="header/menus/widget_side_menu_allowed_comp.jsp" %>	
@@ -29,6 +36,8 @@
 				<%
 				
 			}// NotAllowed
+			
+			
 		}	  		
 
 

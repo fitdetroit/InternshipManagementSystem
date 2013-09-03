@@ -19,7 +19,7 @@
 			<result name="admin">jsp/Admin.jsp</result>
 			<result name="regiStudent">jsp/RegistedStudent.jsp</result>
 			<result name="notRegiStudent">jsp/UnRegistedStudent.jsp</result>
-			<result name="allowedCompany">/index.jsp?cat=company&amp;page=AllowedCompHomepage</result>
+			<result name="allowedCompany">/index.jsp?cat=company&amp;subcat=AllowedComp&amp;page=AllowedCompHomepage</result>
 			<result name="notAllowedCompany">/index.jsp?cat=company&amp;subcat=NotAllowedComp&amp;page=NotAllowedCompany</result>
 		</action>
 			<action name="Login" class="ims.actions.Login"

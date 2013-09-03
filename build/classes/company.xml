@@ -79,13 +79,13 @@
 
 		<action name="AllowedCompanyToCompany" class="ims.actions.ViewCompany"
 			method="allowedCompanyToCompany">
-			<result name="success">/jsp/views/AllowedCompanyToCompany.jsp</result>
+			<result name="success">/index.jsp?cat=company&amp;subcat=AllowedComp&amp;page=AllowedCompanyToCompany</result>
 		<result name="error" type="redirect">/index</result>
 		</action>
 
 		<action name="FullCompanyProfileToCompany" class="ims.actions.ViewCompany"
 			method="FullProfileToCompany">
-			<result name="success">/jsp/views/FullCompanyToCompany.jsp</result>
+			<result name="success">/index.jsp?cat=company&amp;subcat=AllowedComp&amp;page=FullCompanyToCompany</result>
 			<result name="error" type="redirect">/index</result>
 		</action>
 
@@ -96,21 +96,20 @@
 
 		<action name="SelectForInterview" class="ims.actions.ViewStudent"
 			method="notSelectedForInterview">
-			<result name="success">/index.jsp?cat=company&amp;subcat=NotAllowedComp&amp;page=NotSelectForInterviewToCompany
+			<result name="success">/index.jsp?cat=company&amp;subcat=AllowedComp&amp;menuid=manage&amp;page=NotSelectForInterviewToCompany
 			</result>
 			<result name="error" type="redirect">/index</result>
 		</action>
 
 		<action name="SelectedForInterview" class="ims.actions.ViewStudent"
 			method="selctedForInterview">
-			<result name="success">/jsp/views/SelectedForInterviewToCompnay.jsp
-			</result>
+			<result name="success">/index.jsp?cat=company&amp;subcat=AllowedComp&amp;menuid=manage&amp;page=SelectedForInterviewToCompnay</result>
 			<result name="error" type="redirect">/index</result>
 		</action>
 		
 			<action name="SelectedForInternship" class="ims.actions.ViewStudent"
 			method="selctedForInternship">
-			<result name="success">/jsp/views/SelectedForInternshipToCompany.jsp
+			<result name="success">/index.jsp?cat=company&amp;subcat=AllowedComp&amp;menuid=manage&amp;page=SelectedForInternshipToCompany
 			</result>
 			<result name="error" type="redirect">/index</result>
 		</action>

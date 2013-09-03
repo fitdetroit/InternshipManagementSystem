@@ -46,6 +46,45 @@
 		<%
 			}// NotSelectForInterviewToCompany
 			
+			else if("SelectedForInterviewToCompnay".equals(request.getParameter("page")))
+			{
+		%>
+		<%@include file="content/company/SelectedForInterviewToCompnay.jsp" %>
+		
+		<%
+			}//SelectedForInterviewToCompnay
+			
+			else if("SelectedForInternshipToCompany".equals(request.getParameter("page")))
+			{
+		%>
+		<%@include file="content/company/SelectedForInternshipToCompany.jsp" %>
+		
+		<%
+			}//SelectedForInternshipToCompany
+			
+			else if("AllowedCompanyToCompany".equals(request.getParameter("page")))
+			{
+		%>
+		<%@include file="content/company/AllowedCompanyToCompany.jsp" %>
+		
+		<%
+			}//AllowedCompanyToCompany
+		
+			else if("FullCompanyToCompany".equals(request.getParameter("page")))
+			{
+		%>
+		<%@include file="content/company/FullCompanyToCompany.jsp" %>
+		
+		<%
+			}//FullCompanyToCompany
+			else if("ManageStudents".equals(request.getParameter("page")))
+			{
+		%>
+		<%@include file="content/company/ManageStudents.jsp" %>
+		
+		<%
+			}
+		//ManageStudents
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////  Not Allowed Company
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
